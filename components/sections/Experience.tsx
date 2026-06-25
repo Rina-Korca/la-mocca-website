@@ -7,42 +7,42 @@ import { gsap, revealSplitWords, prefersReducedMotion } from '@/lib/gsap';
 const cards = [
   {
     tag: '01',
-    name: 'Handmade Burgers',
-    italic: 'fresh off the grill',
-    desc: 'Juicy beef patties, toasted brioche buns, homemade sauces and crispy sides. Pure comfort.',
-    img: '/images/Screenshot%202026-06-25%20105401.png',
+    name: 'Hausgemachte Burger',
+    italic: 'frisch vom Grill',
+    desc: 'Saftige Rindfleischpatties, geröstete Brioche-Brötchen, hausgemachte Saucen und knusprige Beilagen. Purer Genuss.',
+    img: '/images/burger.png',
     accent: 'tomato'
   },
   {
     tag: '02',
-    name: 'From the Grill',
-    italic: 'slow & smoky',
-    desc: 'Perfectly charred steaks, salmon and chicken — seasoned simply, grilled with patience.',
-    img: '/images/Screenshot%202026-06-25%20105534.png',
+    name: 'Vom Grill',
+    italic: 'langsam & rauchig',
+    desc: 'Perfekt gegrillte Steaks, Lachs und Hähnchen — einfach gewürzt, mit Geduld gegrillt.',
+    img: '/images/steak.png',
     accent: 'olive'
   },
   {
     tag: '03',
-    name: 'BBQ Chicken',
-    italic: 'smoked to perfection',
-    desc: 'Our signature slow-grilled chicken — smoky, tender and golden. The heart of La Mocca.',
-    img: '/images/Screenshot%202026-06-25%20105228.png',
+    name: 'BBQ-Hähnchen',
+    italic: 'zur Perfektion geräuchert',
+    desc: 'Unser Signature-Grill-Hähnchen — rauchig, zart und goldbraun. Das Herzstück von La Mocca.',
+    img: '/images/bbq-chicken.png',
     accent: 'gold'
   },
   {
     tag: '04',
     name: 'Pizza & Pasta',
-    italic: 'stone-baked daily',
-    desc: 'Crispy stone-baked pizza with seasonal toppings. Simple, honest and full of flavour.',
-    img: '/images/Screenshot%202026-06-25%20105329.png',
+    italic: 'täglich steingebacken',
+    desc: 'Knusprige steingebackene Pizza mit saisonalen Belägen. Einfach, ehrlich und voller Geschmack.',
+    img: '/images/pizza.png',
     accent: 'tomato'
   },
   {
     tag: '05',
-    name: 'Fresh Salads',
-    italic: 'light & vibrant',
-    desc: 'Crisp greens, seasonal vegetables, burrata and homemade dressings. A fresh start.',
-    img: '/images/Screenshot%202026-06-25%20105415.png',
+    name: 'Frische Salate',
+    italic: 'leicht & lebendig',
+    desc: 'Knackiges Grün, saisonales Gemüse, Burrata und hausgemachte Dressings. Ein frischer Anfang.',
+    img: '/images/salad.png',
     accent: 'gold'
   }
 ];
@@ -116,18 +116,19 @@ export default function Experience() {
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-10 lg:gap-20 items-end mb-20">
           <div>
             <p className="exp-eyebrow eyebrow flex items-center gap-3">
-              <span className="gold-line" /> The Experience
+              <span className="gold-line" /> Das Erlebnis
             </p>
             <h2
               ref={headline}
               className="display text-[clamp(2.2rem,4.5vw,4rem)] text-cream-100 mt-6"
             >
-              Five reasons to love <span className="italic-accent text-gold-400">La Mocca</span>.
+              Fünf Gründe, <span className="italic-accent text-gold-400">La Mocca</span> zu lieben.
             </h2>
           </div>
           <p className="exp-lead text-cream-100/70 text-base md:text-lg leading-[1.85] max-w-xl">
-            Every dish tells part of the story — the crackle of the grill, the smell of charred meat
-            in the air, and a table where everyone leaves happy. Come taste it for yourself.
+            Jedes Gericht erzählt einen Teil der Geschichte — das Knistern des Grills, der Geruch
+            von gegrilltem Fleisch in der Luft und ein Tisch, an dem alle glücklich gehen.
+            Komm und schmeck es selbst.
           </p>
         </div>
 

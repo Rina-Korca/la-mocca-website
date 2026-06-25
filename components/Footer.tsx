@@ -12,8 +12,8 @@ export default function Footer() {
               La <span className="italic-accent text-gold-400">Mocca</span>
             </p>
             <p className="mt-5 text-cream-100/65 leading-[1.85] max-w-sm">
-              A warm barbecue restaurant in the heart of München — slow-grilled meats,
-              pizza, burgers and fresh salads, served with a smile.
+              Ein gemütliches Barbecue-Restaurant im Herzen von München — langsam gegrilltes
+              Fleisch, Pizza, Burger und frische Salate, serviert mit einem Lächeln.
             </p>
             <div className="flex gap-3 mt-7">
               <a
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-gold-400/80">Visit</p>
+            <p className="text-[10px] tracking-[0.4em] uppercase text-gold-400/80">Adresse</p>
             <ul className="mt-4 space-y-2 text-cream-100/70 text-sm leading-relaxed">
               <li>{RESTAURANT.address.street}</li>
               <li>{RESTAURANT.address.city}</li>
@@ -43,21 +43,17 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-gold-400/80">Hours</p>
+            <p className="text-[10px] tracking-[0.4em] uppercase text-gold-400/80">Öffnungszeiten</p>
             <ul className="mt-4 space-y-2 text-cream-100/70 text-sm">
               <li className="flex justify-between">
-                <span>Mon</span>
-                <span className="text-cream-100/40">Closed</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Tue – Sun</span>
-                <span>12:00 – 23:00</span>
+                <span>Mo – So</span>
+                <span>11:00 – 22:00</span>
               </li>
             </ul>
           </div>
 
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-gold-400/80">Contact</p>
+            <p className="text-[10px] tracking-[0.4em] uppercase text-gold-400/80">Kontakt</p>
             <ul className="mt-4 space-y-3 text-cream-100/70 text-sm">
               <li>
                 <a
@@ -74,7 +70,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="flex items-center gap-2 hover:text-gold-400 transition"
                 >
-                  <MapPin className="w-3.5 h-3.5" /> Get directions
+                  <MapPin className="w-3.5 h-3.5" /> Route planen
                 </a>
               </li>
               <li>
@@ -82,7 +78,7 @@ export default function Footer() {
                   href={`mailto:?subject=Reservation%20%E2%80%94%20La%20Passione%20di%20Napoli`}
                   className="flex items-center gap-2 hover:text-gold-400 transition"
                 >
-                  <Mail className="w-3.5 h-3.5" /> Reservation enquiry
+                  <Mail className="w-3.5 h-3.5" /> Reservierungsanfrage
                 </a>
               </li>
             </ul>
@@ -91,7 +87,7 @@ export default function Footer() {
 
         <div className="mt-14 pt-8 border-t border-cream-100/10 flex flex-col md:flex-row gap-3 justify-between text-[11px] tracking-[0.22em] uppercase text-cream-100/45">
           <p>© {new Date().getFullYear()} La Mocca München</p>
-          <p>Grilled with <span className="text-tomato-400">♥</span> in München</p>
+          <p>Mit <span className="text-tomato-400">♥</span> gegrillt in München</p>
         </div>
       </div>
     </footer>

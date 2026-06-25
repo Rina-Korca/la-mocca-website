@@ -1,11 +1,11 @@
 const items = [
   'La Mocca München',
-  '★ 5.0 · 54 guests',
+  '★ 5.0 · 54 Gäste',
   'BBQ & Grill',
-  'Pizza & Burgers',
-  'Dine-in · Drive-through · Delivery',
-  'Open Daily · 11:00 – 22:00',
-  'Mangia bene, ridi spesso'
+  'Pizza & Burger',
+  'Vor Ort · Drive-through · Lieferung',
+  'Täglich geöffnet · 11:00 – 22:00',
+  'Gut essen, viel lachen'
 ];
 
 export default function Marquee() {

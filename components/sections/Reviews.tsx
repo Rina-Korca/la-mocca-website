@@ -7,19 +7,19 @@ import { RESTAURANT } from '@/lib/utils';
 
 const reviews = [
   {
-    text: 'The BBQ chicken is absolutely incredible — perfectly smoked, fall-off-the-bone tender and full of flavour. Best grill in München by far. We are already planning our next visit.',
+    text: 'Das BBQ-Hähnchen ist absolut unglaublich — perfekt geräuchert, butterzartes Fleisch und voller Geschmack. Bester Grill in München bei weitem. Wir planen schon unseren nächsten Besuch.',
     author: 'Klaus M.',
     role: 'München',
     rating: 5
   },
   {
-    text: 'Great burgers, crispy pizza and super friendly service. The prices are unbeatable for the quality you get. This is our new favourite spot in the neighbourhood.',
+    text: 'Tolle Burger, knusprige Pizza und super freundlicher Service. Die Preise sind für die Qualität unschlagbar. Das ist jetzt unser neuer Lieblingsplatz in der Nachbarschaft.',
     author: 'Sarah L.',
     role: 'München',
     rating: 5
   },
   {
-    text: 'Been coming here every week since they opened. The atmosphere is cosy and the food never disappoints. The grilled steak with roasted tomatoes is a must-try.',
+    text: 'Ich komme hier seit der Eröffnung jede Woche hin. Die Atmosphäre ist gemütlich und das Essen enttäuscht nie. Das gegrillte Steak mit gerösteten Tomaten ist ein absolutes Muss.',
     author: 'Thomas W.',
     role: 'München Ramersdorf',
     rating: 5
@@ -87,13 +87,13 @@ export default function Reviews() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
         <div className="text-center mb-20">
           <p className="rev-eyebrow eyebrow flex items-center justify-center gap-3">
-            <span className="gold-line" /> Loved by guests
+            <span className="gold-line" /> Von Gästen geliebt
           </p>
           <h2
             ref={headline}
             className="display text-[clamp(2.2rem,5vw,4.4rem)] text-cream-100 mt-6 max-w-3xl mx-auto"
           >
-            Their words, our <span className="italic-accent text-gold-400">pride</span>.
+            Ihre Worte, unser <span className="italic-accent text-gold-400">Stolz</span>.
           </h2>
           <div className="rev-stars flex items-center justify-center gap-5 mt-10">
             <div className="flex gap-1">
@@ -111,7 +111,7 @@ export default function Reviews() {
             </span>
           </div>
           <p className="rev-meta text-[11px] tracking-[0.3em] uppercase text-cream-100/55 mt-3">
-            From {RESTAURANT.reviewCount} Google reviews
+            Aus {RESTAURANT.reviewCount} Google-Bewertungen
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export default function Reviews() {
             rel="noreferrer"
             className="btn-gold"
           >
-            Read all reviews on Google
+            Alle Bewertungen auf Google lesen
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

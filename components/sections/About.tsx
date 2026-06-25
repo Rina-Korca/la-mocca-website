@@ -87,30 +87,31 @@ export default function About() {
         {/* TEXT COLUMN */}
         <div className="relative z-10">
           <p className="eyebrow flex items-center gap-3">
-            <span className="gold-line" /> La nostra storia
+            <span className="gold-line" /> Unsere Geschichte
           </p>
           <h2
             ref={headlineRef}
             className="display text-[clamp(2.2rem,4.5vw,4.2rem)] text-cream-100 mt-6"
           >
-            A taste of fire, served in <span className="italic-accent text-gold-400">München</span>.
+            Ein Geschmack von Feuer, serviert in <span className="italic-accent text-gold-400">München</span>.
           </h2>
 
           <div className="about-body mt-10 space-y-5 text-cream-100/75 text-base md:text-lg leading-[1.85] max-w-xl">
             <p>
-              La Mocca was born from a passion for the grill — the sizzle of perfectly
-              seasoned meat over an open flame, the warmth of a cosy wooden room and the
-              simple joy of a table shared with good company.
+              La Mocca entstand aus einer Leidenschaft für den Grill — das Zischen von
+              perfekt gewürztem Fleisch über offenem Feuer, die Wärme eines gemütlichen
+              Holzraums und die einfache Freude an einem Tisch mit guter Gesellschaft.
             </p>
             <p>
-              Every dish is crafted with care: fresh ingredients, slow cooking, and the
-              kind of attention that only comes when you truly love what you do. From smoky
-              BBQ chicken to crispy stone-baked pizza and hearty burgers, our menu is built
-              for people who believe that great food should always feel like home.
+              Jedes Gericht wird mit Sorgfalt zubereitet: frische Zutaten, langsames Garen
+              und die Aufmerksamkeit, die nur entsteht, wenn man wirklich liebt, was man tut.
+              Von rauchigem BBQ-Hähnchen bis zu knuspriger steingebackener Pizza und
+              herzhaften Burgern — unsere Speisekarte wurde für Menschen gemacht, die glauben,
+              dass großartiges Essen sich immer wie zu Hause anfühlen sollte.
             </p>
             <p>
-              It is the smell of char and spice in the air, a cold drink in your hand, and
-              a plate in front of you that puts a smile on your face. That is La Mocca.
+              Der Geruch von Holzkohle und Gewürzen in der Luft, ein kaltes Getränk in der
+              Hand und ein Teller vor dir, der dich zum Lächeln bringt. Das ist La Mocca.
             </p>
           </div>
 
@@ -118,19 +119,19 @@ export default function About() {
             <div className="about-stat">
               <p className="font-display text-4xl md:text-5xl gold-text">5.0</p>
               <p className="text-[11px] tracking-[0.22em] uppercase text-cream-100/55 mt-2">
-                Google rating
+                Google-Bewertung
               </p>
             </div>
             <div className="about-stat">
               <p className="font-display text-4xl md:text-5xl gold-text">54</p>
               <p className="text-[11px] tracking-[0.22em] uppercase text-cream-100/55 mt-2">
-                Happy guests
+                Zufriedene Gäste
               </p>
             </div>
             <div className="about-stat">
               <p className="font-display text-4xl md:text-5xl gold-text">€10</p>
               <p className="text-[11px] tracking-[0.22em] uppercase text-cream-100/55 mt-2">
-                Starting from
+                Ab
               </p>
             </div>
           </div>
@@ -140,8 +141,8 @@ export default function About() {
         <div className="about-image-stage relative h-[600px] md:h-[680px]">
           <div className="about-img-main absolute top-0 right-0 w-[78%] h-[68%] overflow-hidden">
             <Image
-              src="/images/Screenshot%202026-06-25%20105657.png"
-              alt="La Mocca restaurant interior"
+              src="/images/interior.png"
+              alt="La Mocca Restaurant Innenraum"
               fill
               sizes="(min-width: 1024px) 40vw, 80vw"
               className="object-cover"
@@ -151,8 +152,8 @@ export default function About() {
 
           <div className="about-img-back absolute bottom-12 left-0 w-[55%] h-[45%] overflow-hidden border border-gold-500/20">
             <Image
-              src="/images/Screenshot%202026-06-25%20105534.png"
-              alt="Grilled steak fresh from the grill"
+              src="/images/steak.png"
+              alt="Gegrilltes Steak frisch vom Grill"
               fill
               sizes="(min-width: 1024px) 30vw, 60vw"
               className="object-cover"

@@ -13,73 +13,73 @@ type Dish = {
 };
 
 const menu: Record<string, Dish[]> = {
-  Starters: [
+  Vorspeisen: [
     {
       name: 'Prosciutto & Rucola',
-      italic: 'antipasto della casa',
-      desc: 'Cured prosciutto, fresh rocket, shaved Parmigiano, lemon and olive oil.',
+      italic: 'Antipasto della Casa',
+      desc: 'Luftgetrockneter Prosciutto, frischer Rucola, gehobelter Parmigiano, Zitrone und Olivenöl.',
       price: '€9',
-      img: '/images/Screenshot%202026-06-25%20105507.png'
+      img: '/images/prosciutto.png'
     },
     {
       name: 'Focaccia Artigianale',
-      italic: 'con rosmarino',
-      desc: 'Crispy stone-baked focaccia with rosemary, sea salt and extra-virgin olive oil.',
+      italic: 'mit Rosmarin',
+      desc: 'Knusprige steingebackene Focaccia mit Rosmarin, Meersalz und nativem Olivenöl extra.',
       price: '€6',
-      img: '/images/Screenshot%202026-06-25%20105519.png'
+      img: '/images/focaccia.png'
     },
     {
-      name: 'Zuppa del Giorno',
-      italic: "today's soup",
-      desc: 'A hearty daily soup made fresh from seasonal ingredients. Ask your server.',
+      name: 'Tagessuppe',
+      italic: 'frisch zubereitet',
+      desc: 'Eine herzhafte Tagessuppe aus frischen saisonalen Zutaten. Fragen Sie Ihren Kellner.',
       price: '€8',
-      img: '/images/Screenshot%202026-06-25%20105627.png'
+      img: '/images/soup.png'
     }
   ],
-  'From the Grill': [
+  'Vom Grill': [
     {
-      name: 'BBQ Chicken',
-      italic: 'slow-smoked',
-      desc: 'Slow-grilled chicken with our house BBQ rub, served with roasted vegetables.',
+      name: 'BBQ-Hähnchen',
+      italic: 'langsam geräuchert',
+      desc: 'Langsam gegrilltes Hähnchen mit unserem Haus-BBQ-Rub, serviert mit geröstetem Gemüse.',
       price: '€14',
-      img: '/images/Screenshot%202026-06-25%20105228.png'
+      img: '/images/bbq-chicken.png'
     },
     {
-      name: 'Grilled Steak',
-      italic: 'con verdure',
-      desc: 'Juicy grilled steak, roasted cherry tomatoes and seasonal vegetables.',
+      name: 'Gegrilltes Steak',
+      italic: 'mit Gemüse',
+      desc: 'Saftiges gegrilltes Steak, geröstete Kirschtomaten und saisonales Gemüse.',
       price: '€18',
-      img: '/images/Screenshot%202026-06-25%20105534.png'
+      img: '/images/steak.png'
     },
     {
-      name: 'Grilled Salmon',
-      italic: 'con contorno',
-      desc: 'Fresh salmon fillet from the grill, served with sautéed greens and cherry tomatoes.',
+      name: 'Gegrillter Lachs',
+      italic: 'mit Beilagen',
+      desc: 'Frisches Lachsfilet vom Grill, serviert mit sautiertem Grün und Kirschtomaten.',
       price: '€16',
-      img: '/images/Screenshot%202026-06-25%20105431.png'
+      img: '/images/salmon.png'
     }
   ],
-  'Pizza & Burgers': [
+  'Pizza & Burger': [
     {
       name: 'Margherita',
-      italic: 'stone-baked',
-      desc: 'Classic stone-baked pizza with tomato sauce, mozzarella and fresh basil.',
+      italic: 'steingebacken',
+      desc: 'Klassische steingebackene Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.',
       price: '€11',
-      img: '/images/Screenshot%202026-06-25%20105329.png'
+      img: '/images/pizza.png'
     },
     {
       name: 'Classic Burger',
-      italic: 'con patatine',
-      desc: 'Juicy beef burger on a brioche bun with salad, tomato, pickles and house sauce.',
+      italic: 'mit Pommes',
+      desc: 'Saftiger Rindfleischburger im Brioche-Brötchen mit Salat, Tomate, Pickles und Haussauce.',
       price: '€13',
-      img: '/images/Screenshot%202026-06-25%20105401.png'
+      img: '/images/burger.png'
     },
     {
-      name: 'Crispy Fried Chicken',
-      italic: 'con insalata',
-      desc: 'Golden fried chicken with a lemon wedge and warm potato salad on the side.',
+      name: 'Knuspriges Fried Chicken',
+      italic: 'mit Salat',
+      desc: 'Goldbraun frittiertes Hähnchen mit einer Zitronenspalte und warmem Kartoffelsalat.',
       price: '€12',
-      img: '/images/Screenshot%202026-06-25%20105615.png'
+      img: '/images/fried-chicken.png'
     }
   ]
 };
@@ -139,16 +139,16 @@ export default function MenuPreview() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
         <div className="text-center mb-14">
           <p className="menu-eyebrow eyebrow flex items-center justify-center gap-3">
-            <span className="gold-line" /> Il Menu <span className="gold-line" />
+            <span className="gold-line" /> Speisekarte <span className="gold-line" />
           </p>
           <h2
             ref={headline}
             className="display text-[clamp(2.2rem,5vw,4.4rem)] text-cream-100 mt-6 max-w-3xl mx-auto"
           >
-            A preview of <span className="italic-accent text-gold-400">today's</span> menu.
+            Ein Vorgeschmack auf die <span className="italic-accent text-gold-400">heutige</span> Karte.
           </h2>
           <p className="menu-lead text-cream-100/65 max-w-xl mx-auto mt-6 text-base md:text-lg leading-relaxed">
-            Selections change with the season. Ask your server for today's specials or order online.
+            Die Auswahl wechselt mit den Jahreszeiten. Fragen Sie nach den Tagesempfehlungen oder bestellen Sie online.
           </p>
         </div>
 
@@ -203,7 +203,7 @@ export default function MenuPreview() {
 
         <div className="flex justify-center mt-14">
           <a href="#reserve" className="btn-ghost">
-            Reserve to taste the full menu
+            Jetzt reservieren und die volle Karte genießen
           </a>
         </div>
       </div>

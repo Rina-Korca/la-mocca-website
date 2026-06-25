@@ -51,7 +51,7 @@ export default function Reserve() {
     >
       <div ref={imgRef} className="absolute inset-0">
         <Image
-          src="/images/Screenshot%202026-06-25%20105657.png"
+          src="/images/interior.png"
           alt="La Mocca warm restaurant interior"
           fill
           sizes="100vw"
@@ -64,33 +64,34 @@ export default function Reserve() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 w-full">
         <div className="max-w-3xl">
           <p className="res-eyebrow eyebrow flex items-center gap-3">
-            <span className="gold-line" /> Riservazione
+            <span className="gold-line" /> Reservierung
           </p>
           <h2
             ref={headline}
             className="display text-[clamp(2.6rem,6vw,6rem)] text-cream-100 mt-6 leading-[0.95]"
           >
-            Reserve your seat at our <span className="italic-accent text-gold-400">table</span>.
+            Reservieren Sie Ihren Platz an unserem <span className="italic-accent text-gold-400">Tisch</span>.
           </h2>
           <p className="res-body text-cream-100/75 text-lg md:text-xl leading-[1.85] mt-8 max-w-2xl font-light">
-            Pull up a chair. Let the grill do the talking — slow, smoky and full of flavour.
-            Call us to reserve, order online, or drive through. We are open daily from 11:00.
+            Nehmen Sie Platz. Lassen Sie den Grill sprechen — langsam, rauchig und voller Geschmack.
+            Rufen Sie uns an, bestellen Sie online oder nutzen Sie den Drive-through.
+            Wir sind täglich ab 11:00 Uhr geöffnet.
           </p>
 
           <div className="res-cta-row mt-12 flex flex-wrap gap-3">
             <a href={RESTAURANT.phoneHref} className="btn-gold !py-5 !px-9 text-sm">
-              <Phone className="w-4 h-4" /> Reserve by phone
+              <Phone className="w-4 h-4" /> Telefonisch reservieren
             </a>
             <a
-              href={`mailto:?subject=Reservation%20—%20La%20Passione%20di%20Napoli&body=Buongiorno%2C%0A%0AI%20would%20like%20to%20book%20a%20table.`}
+              href={`mailto:?subject=Reservierungsanfrage%20—%20La%20Mocca&body=Guten%20Tag%2C%0A%0AIch%20m%C3%B6chte%20gerne%20einen%20Tisch%20reservieren.`}
               className="btn-ghost !py-5 !px-9 text-sm"
             >
-              <Calendar className="w-4 h-4" /> Send a reservation enquiry
+              <Calendar className="w-4 h-4" /> Reservierungsanfrage senden
             </a>
           </div>
 
           <p className="res-note text-[11px] tracking-[0.3em] uppercase text-cream-100/55 mt-10 flex flex-wrap gap-x-8 gap-y-2">
-            <span>Open Daily · 11:00 – 22:00</span>
+            <span>Täglich geöffnet · 11:00 – 22:00</span>
             <span className="text-gold-400/80">{RESTAURANT.phone}</span>
             <span>{RESTAURANT.address.street}, {RESTAURANT.address.city}</span>
           </p>

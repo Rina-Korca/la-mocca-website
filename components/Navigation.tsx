@@ -6,12 +6,12 @@ import { Menu, X, Phone } from 'lucide-react';
 import { cn, RESTAURANT } from '@/lib/utils';
 
 const links = [
-  { href: '#about', label: 'Storia' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#menu', label: 'Menu' },
-  { href: '#atmosphere', label: 'Atmosphere' },
-  { href: '#reviews', label: 'Reviews' },
-  { href: '#visit', label: 'Visit' }
+  { href: '#about', label: 'Über uns' },
+  { href: '#experience', label: 'Erlebnis' },
+  { href: '#menu', label: 'Speisekarte' },
+  { href: '#atmosphere', label: 'Atmosphäre' },
+  { href: '#reviews', label: 'Bewertungen' },
+  { href: '#visit', label: 'Besuchen' }
 ];
 
 export default function Navigation() {
@@ -68,10 +68,10 @@ export default function Navigation() {
             aria-label="Call the restaurant"
           >
             <Phone className="w-3.5 h-3.5" />
-            <span>Call</span>
+            <span>Anrufen</span>
           </a>
           <a href="#reserve" className="btn-gold !py-3 !px-5 !text-[11px]">
-            Reserve
+            Reservieren
           </a>
         </div>
 
@@ -99,14 +99,14 @@ export default function Navigation() {
             ))}
             <div className="flex gap-3 pt-6">
               <a href={RESTAURANT.phoneHref} className="btn-ghost flex-1 justify-center">
-                <Phone className="w-3.5 h-3.5" /> Call
+                <Phone className="w-3.5 h-3.5" /> Anrufen
               </a>
               <a
                 href="#reserve"
                 onClick={() => setOpen(false)}
                 className="btn-gold flex-1 justify-center"
               >
-                Reserve
+                Reservieren
               </a>
             </div>
           </nav>

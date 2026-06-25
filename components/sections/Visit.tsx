@@ -50,13 +50,13 @@ export default function Visit() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-start">
           <div>
             <p className="eyebrow flex items-center gap-3">
-              <span className="gold-line" /> Vieni a trovarci
+              <span className="gold-line" /> Komm uns besuchen
             </p>
             <h2
               ref={headline}
               className="display text-[clamp(2.2rem,4.5vw,4rem)] text-cream-100 mt-6"
             >
-              Find us in the heart of <span className="italic-accent text-gold-400">München</span>.
+              Finden Sie uns im Herzen von <span className="italic-accent text-gold-400">München</span>.
             </h2>
 
             <div className="mt-12 space-y-6">
@@ -70,7 +70,7 @@ export default function Visit() {
                   <MapPin className="w-5 h-5 text-gold-400" />
                 </span>
                 <div>
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-gold-400/80">Address</p>
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-gold-400/80">Adresse</p>
                   <p className="font-display text-xl text-cream-100 mt-1">
                     {RESTAURANT.address.street}
                   </p>
@@ -87,12 +87,12 @@ export default function Visit() {
                   <Phone className="w-5 h-5 text-gold-400" />
                 </span>
                 <div>
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-gold-400/80">Reservations</p>
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-gold-400/80">Reservierungen</p>
                   <p className="font-display text-xl text-cream-100 mt-1">
                     {RESTAURANT.phone}
                   </p>
                   <p className="text-cream-100/70 mt-1 text-sm">
-                    Tap to call — we answer during opening hours.
+                    Tippen zum Anrufen — wir antworten während der Öffnungszeiten.
                   </p>
                 </div>
               </a>
@@ -102,7 +102,7 @@ export default function Visit() {
                   <Clock className="w-5 h-5 text-gold-400" />
                 </span>
                 <div className="flex-1">
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-gold-400/80">Opening hours</p>
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-gold-400/80">Öffnungszeiten</p>
                   <div className="mt-3 space-y-1.5">
                     {RESTAURANT.hours.map((h) => (
                       <div
@@ -160,7 +160,7 @@ export default function Visit() {
               rel="noreferrer"
               className="block text-center mt-4 text-[11px] tracking-[0.3em] uppercase text-gold-400 hover:text-gold-300"
             >
-              Open in Google Maps →
+              In Google Maps öffnen →
             </a>
           </div>
         </div>

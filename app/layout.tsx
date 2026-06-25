@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     template: '%s · La Mocca München'
   },
   description:
-    'Barbecue restaurant in München — slow-grilled meats, pizza, burgers and fresh salads. Rated 5.0 from 54 guests. Kurt-Eisner-Str. 30, 81735 München.',
+    'Barbecue-Restaurant in München — langsam gegrilltes Fleisch, Pizza, Burger und frische Salate. Bewertet mit 5,0 von 54 Gästen. Kurt-Eisner-Str. 30, 81735 München.',
   keywords: [
-    'BBQ restaurant München',
+    'BBQ Restaurant München',
     'Barbecue München',
     'La Mocca München',
     'Grill Restaurant München',
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'La Mocca München',
     description:
-      'A cozy barbecue restaurant in München — slow-grilled meats, pizza, burgers and fresh salads. Open daily from 11:00.',
+      'Ein gemütliches Barbecue-Restaurant in München — langsam gegrilltes Fleisch, Pizza, Burger und frische Salate. Täglich ab 11:00 Uhr geöffnet.',
     type: 'website',
-    locale: 'en_DE',
+    locale: 'de_DE',
     siteName: 'La Mocca'
   },
   robots: { index: true, follow: true },

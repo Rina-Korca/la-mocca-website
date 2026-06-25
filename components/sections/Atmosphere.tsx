@@ -6,22 +6,22 @@ import { gsap, revealSplitWords, prefersReducedMotion } from '@/lib/gsap';
 
 const panels = [
   {
-    label: 'Il Pranzo',
-    title: 'Lunch in warm wooden light.',
-    sub: '11:00 — step in, settle in, let the smell of the grill do the rest.',
-    img: '/images/Screenshot%202026-06-25%20105657.png'
+    label: 'Das Mittagessen',
+    title: 'Mittagessen im warmen Holzlicht.',
+    sub: '11:00 — hereinspaziert, ankommen, den Duft des Grills die Arbeit machen lassen.',
+    img: '/images/interior.png'
   },
   {
-    label: "L'Antipasto",
-    title: 'Start with something good.',
-    sub: '11:00 — prosciutto, focaccia, soup of the day. The perfect beginning.',
-    img: '/images/Screenshot%202026-06-25%20105507.png'
+    label: 'Die Vorspeise',
+    title: 'Fang mit etwas Gutem an.',
+    sub: '11:00 — Prosciutto, Focaccia, Tagessuppe. Der perfekte Einstieg.',
+    img: '/images/prosciutto.png'
   },
   {
-    label: 'La Cena',
-    title: 'Dinner fresh off the grill.',
-    sub: '18:00 — charred meat, cold drinks, a cosy room. Stay as long as you like.',
-    img: '/images/Screenshot%202026-06-25%20105228.png'
+    label: 'Das Abendessen',
+    title: 'Abendessen frisch vom Grill.',
+    sub: '18:00 — gegrilltes Fleisch, kalte Getränke, ein gemütlicher Raum. Bleib so lang du möchtest.',
+    img: '/images/bbq-chicken.png'
   }
 ];
 
@@ -109,16 +109,16 @@ export default function Atmosphere() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
         <div className="text-center mb-24">
           <p className="atm-eyebrow eyebrow flex items-center justify-center gap-3">
-            <span className="gold-line" /> Atmosphere
+            <span className="gold-line" /> Atmosphäre
           </p>
           <h2
             ref={headline}
             className="display text-[clamp(2.2rem,5vw,4.4rem)] text-cream-100 mt-6 max-w-3xl mx-auto"
           >
-            From <span className="italic-accent text-gold-400">11:00</span> to <span className="italic-accent text-gold-400">22:00</span>.
+            Von <span className="italic-accent text-gold-400">11:00</span> bis <span className="italic-accent text-gold-400">22:00</span>.
           </h2>
           <p className="atm-lead text-cream-100/65 max-w-xl mx-auto mt-6 text-base md:text-lg leading-relaxed">
-            The mood changes with the hour — casual lunch by day, cosy grill dinner by night.
+            Die Stimmung wechselt mit der Stunde — entspanntes Mittagessen tagsüber, gemütliches Grillabendessen bei Nacht.
           </p>
         </div>
 

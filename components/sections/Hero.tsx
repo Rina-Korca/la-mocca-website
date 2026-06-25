@@ -94,7 +94,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/images/Screenshot%202026-06-25%20105228.png"
+          poster="/images/bbq-chicken.png"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/herosection.mp4" type="video/mp4" />
@@ -108,16 +108,16 @@ export default function Hero() {
 
       {/* floating side decoration */}
       <div className="hero-tag-1 hidden md:block absolute top-32 left-6 lg:left-10 rotate-[-90deg] origin-left text-[10px] tracking-[0.5em] uppercase text-cream-100/40">
-        Est. München · Made with Fire
+        Gegr. München · Mit Feuer gemacht
       </div>
       <div className="hero-tag-2 hidden md:block absolute bottom-40 right-6 lg:right-10 rotate-90 origin-right text-[10px] tracking-[0.5em] uppercase text-cream-100/40">
-        5.0 ★ · 54 ospiti felici
+        5.0 ★ · 54 zufriedene Gäste
       </div>
 
       <div className="hero-overlay-text relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 min-h-[100svh] flex flex-col justify-center pt-24 pb-16">
         <p className="hero-eyebrow eyebrow flex items-center gap-3">
           <span className="gold-line" />
-          Barbecue & Grill · In the heart of München
+          Barbecue & Grill · Im Herzen von München
         </p>
 
         <h1
@@ -133,15 +133,15 @@ export default function Hero() {
           ref={subRef}
           className="max-w-2xl text-cream-100/85 text-lg md:text-xl leading-relaxed font-light"
         >
-          A cozy barbecue restaurant in München — slow-grilled meats, crispy pizza, hearty burgers and fresh salads, served with warmth every day from 11:00.
+          Ein gemütliches Barbecue-Restaurant in München — langsam gegrilltes Fleisch, knusprige Pizza, herzhafte Burger und frische Salate, täglich serviert ab 11:00 Uhr.
         </h2>
 
         <div className="mt-12 flex flex-wrap gap-3">
           <a href="#reserve" className="hero-cta btn-gold">
-            <Calendar className="w-4 h-4" /> Reserve a Table
+            <Calendar className="w-4 h-4" /> Tisch reservieren
           </a>
           <a href={RESTAURANT.phoneHref} className="hero-cta btn-ghost">
-            <Phone className="w-4 h-4" /> Call Now
+            <Phone className="w-4 h-4" /> Jetzt anrufen
           </a>
           <a
             href={RESTAURANT.mapsUrl}
@@ -149,22 +149,22 @@ export default function Hero() {
             rel="noreferrer"
             className="hero-cta btn-ghost"
           >
-            <MapPin className="w-4 h-4" /> Get Directions
+            <MapPin className="w-4 h-4" /> Route planen
           </a>
         </div>
 
         <div className="mt-16 flex flex-wrap gap-x-12 gap-y-5 items-center text-[11px] tracking-[0.22em] uppercase text-cream-100/55">
           <div className="hero-meta flex items-center gap-3">
             <span className="text-gold-400 text-base">★ 5.0</span>
-            <span>from 54 reviews</span>
+            <span>aus 54 Bewertungen</span>
           </div>
           <div className="hero-meta flex items-center gap-3">
             <span className="w-1 h-1 rounded-full bg-gold-400/60" />
-            <span>€10 – €20 per person</span>
+            <span>€10 – €20 pro Person</span>
           </div>
           <div className="hero-meta flex items-center gap-3">
             <span className="w-1 h-1 rounded-full bg-gold-400/60" />
-            <span>Open daily · 11:00 – 22:00</span>
+            <span>Täglich geöffnet · 11:00 – 22:00</span>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ export default function Hero() {
       {/* scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center gap-3">
         <span className="text-[10px] tracking-[0.4em] uppercase text-cream-100/45">
-          Scroll
+          Scrollen
         </span>
         <span className="block w-px h-12 bg-gradient-to-b from-gold-400 to-transparent" />
       </div>
