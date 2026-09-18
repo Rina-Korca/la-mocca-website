@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from 'react';
 import { MapPin, Phone, Clock, Car } from 'lucide-react';
 import { gsap, revealSplitWords } from '@/lib/gsap';
 import { RESTAURANT } from '@/lib/utils';
+import { LazyMapEmbed } from '@/components/lazy-map-embed';
 
 export default function Visit() {
   const root = useRef<HTMLElement>(null);
@@ -142,14 +143,9 @@ export default function Visit() {
 
           <div className="lg:sticky lg:top-28">
             <div className="visit-map relative aspect-square w-full overflow-hidden border border-gold-400/20">
-              <iframe
+              <LazyMapEmbed
                 src={RESTAURANT.mapsEmbedUrl}
-                width="100%"
-                height="100%"
                 style={{ border: 0, filter: 'grayscale(40%) contrast(0.9) brightness(0.85)' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 title="Map to La Mocca"
               />
               <div className="absolute inset-0 pointer-events-none bg-espresso-900/10" />
