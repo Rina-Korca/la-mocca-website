@@ -88,6 +88,17 @@ export default function Footer() {
         <div className="mt-14 pt-8 border-t border-cream-100/10 flex flex-col md:flex-row gap-3 justify-between text-[11px] tracking-[0.22em] uppercase text-cream-100/45">
           <p>© {new Date().getFullYear()} La Mocca München</p>
           <p>Mit <span className="text-tomato-400">♥</span> gegrillt in München</p>
+          <p>
+            Powered by{" "}
+            <a
+              href="https://clearline-ai.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cream-100/70 transition-colors"
+            >
+              ClearLine Tech
+            </a>
+          </p>
         </div>
       </div>
     </footer>
